@@ -1,12 +1,17 @@
 import React from 'react';
 
 
-const SingleContact = () => {
+const SingleContact = (props) => {
 
     return (
-        <h3>
-            Pojedynczy kontakt
-        </h3>
+        <div>
+            <p>
+                <strong>{props.contact.name}</strong>
+                <strong>{props.contact.surname}</strong>
+                <strong>{props.contact.phone}</strong>
+                <strong>{props.contact.email}</strong>
+            </p>
+        </div>
     )
 
 

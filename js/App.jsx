@@ -4,7 +4,7 @@ import ContactList from './ContactList.jsx';
 
 class App extends React.Component {
 
-    /*state = {
+    state = {
         contacts: [
                     {
                         id: 0,
@@ -21,7 +21,7 @@ class App extends React.Component {
                         email: 'przyklad1@email.com',
                     }
                 ]
-            };*/
+            };
 
 
 
@@ -29,7 +29,7 @@ class App extends React.Component {
         return (
             <div className="container">
                 <h1>Contact Book</h1>
-                <ContactList/>
+                <ContactList contacts={this.state.contacts}/>
             </div>
         )
     }
