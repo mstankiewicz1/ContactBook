@@ -22526,6 +22526,10 @@ var _react = __webpack_require__(49);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _ContactList = __webpack_require__(188);
+
+var _ContactList2 = _interopRequireDefault(_ContactList);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22544,16 +22548,38 @@ var App = function (_React$Component) {
     }
 
     _createClass(App, [{
-        key: "render",
+        key: 'render',
+
+
+        /*state = {
+            contacts: [
+                        {
+                            id: 0,
+                            name: 'Jan',
+                            surname: 'Kowalski',
+                            phone: '111-222-333',
+                            email: 'przyklad@email.com',
+                        },
+                        {
+                            id: 1,
+                            name: 'Anna',
+                            surname: 'Nowak',
+                            phone: '444-555-666',
+                            email: 'przyklad1@email.com',
+                        }
+                    ]
+                };*/
+
         value: function render() {
             return _react2.default.createElement(
-                "div",
-                { className: "container" },
+                'div',
+                { className: 'container' },
                 _react2.default.createElement(
-                    "h1",
+                    'h1',
                     null,
-                    "ContactBook"
-                )
+                    'Contact Book'
+                ),
+                _react2.default.createElement(_ContactList2.default, null)
             );
         }
     }]);
@@ -22562,6 +22588,71 @@ var App = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = App;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(49);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _SingleContact = __webpack_require__(189);
+
+var _SingleContact2 = _interopRequireDefault(_SingleContact);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ContactList = function ContactList() {
+
+    return _react2.default.createElement(
+        'div',
+        { className: 'contactList' },
+        _react2.default.createElement(
+            'h2',
+            null,
+            'Lista kontakt\xF3w'
+        ),
+        _react2.default.createElement(_SingleContact2.default, null)
+    );
+};
+
+exports.default = ContactList;
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _react = __webpack_require__(49);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var SingleContact = function SingleContact() {
+
+    return _react2.default.createElement(
+        'h3',
+        null,
+        'Pojedynczy kontakt'
+    );
+};
+
+exports.default = SingleContact;
 
 /***/ })
 /******/ ]);
