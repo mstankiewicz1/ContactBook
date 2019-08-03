@@ -22530,6 +22530,10 @@ var _ContactList = __webpack_require__(188);
 
 var _ContactList2 = _interopRequireDefault(_ContactList);
 
+var _AddContact = __webpack_require__(190);
+
+var _AddContact2 = _interopRequireDefault(_AddContact);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
@@ -22594,6 +22598,7 @@ var App = function (_React$Component) {
                     null,
                     'Contact Book'
                 ),
+                _react2.default.createElement(_AddContact2.default, null),
                 _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact })
             );
         }
@@ -22696,43 +22701,107 @@ var SingleContact = function SingleContact(props) {
         null,
         _react2.default.createElement(
             'p',
-            null,
+            { style: important ? style : null },
             _react2.default.createElement(
-                'div',
-                { style: important ? style : null },
-                _react2.default.createElement(
-                    'strong',
-                    null,
-                    name
-                ),
-                _react2.default.createElement(
-                    'strong',
-                    null,
-                    surname
-                ),
-                _react2.default.createElement(
-                    'strong',
-                    null,
-                    phone
-                ),
-                _react2.default.createElement(
-                    'strong',
-                    null,
-                    email
-                ),
-                _react2.default.createElement(
-                    'button',
-                    { onClick: function onClick() {
-                            return props.delete(id);
-                        } },
-                    'X'
-                )
+                'strong',
+                null,
+                name
+            ),
+            _react2.default.createElement(
+                'strong',
+                null,
+                surname
+            ),
+            _react2.default.createElement(
+                'strong',
+                null,
+                phone
+            ),
+            _react2.default.createElement(
+                'strong',
+                null,
+                email
+            ),
+            _react2.default.createElement(
+                'button',
+                { onClick: function onClick() {
+                        return props.delete(id);
+                    } },
+                'X'
             )
         )
     );
 };
 
 exports.default = SingleContact;
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(24);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AddContact = function (_React$Component) {
+    _inherits(AddContact, _React$Component);
+
+    function AddContact() {
+        var _ref;
+
+        var _temp, _this, _ret;
+
+        _classCallCheck(this, AddContact);
+
+        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+        }
+
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = AddContact.__proto__ || Object.getPrototypeOf(AddContact)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+            name: '',
+            surname: '',
+            phone: '',
+            email: '',
+            checked: false
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+
+    _createClass(AddContact, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'form' },
+                _react2.default.createElement('input', { type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name }),
+                _react2.default.createElement('input', { type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname }),
+                _react2.default.createElement('input', { type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone }),
+                _react2.default.createElement('input', { type: 'email', placeholder: 'Wpisz email', value: this.state.email }),
+                _react2.default.createElement('input', { type: 'checkbox', checked: this.state.checked })
+            );
+        }
+    }]);
+
+    return AddContact;
+}(_react2.default.Component);
+
+exports.default = AddContact;
 
 /***/ })
 /******/ ]);

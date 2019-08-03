@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactList from './ContactList.jsx';
+import AddContact from './AddContact.jsx';
 
 
 class App extends React.Component {
@@ -42,6 +43,7 @@ class App extends React.Component {
         return (
             <div className="container">
                 <h1>Contact Book</h1>
+                <AddContact/>
                 <ContactList contacts={this.state.contacts} delete={this.deleteContact}/>
             </div>
         )

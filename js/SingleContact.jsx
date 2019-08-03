@@ -11,14 +11,12 @@ const SingleContact = (props) => {
     const {name, surname, phone, email, id, important} = props.contact;
     return (
         <div>
-            <p>
-                <div style={important ? style : null}>
+            <p style={important ? style : null}>
                     <strong>{name}</strong>
                     <strong>{surname}</strong>
                     <strong>{phone}</strong>
                     <strong>{email}</strong>
                     <button onClick={() => props.delete(id)}>X</button>
-                </div>
             </p>
         </div>
     )

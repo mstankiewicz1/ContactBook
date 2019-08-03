@@ -10,8 +10,6 @@
     border: 2px solid red;
 }
 
-
-
 h1 {
     font-size: 30px;
     color: black;
@@ -22,3 +20,7 @@ h1 {
 .contactList {
     text-align: center;
  }
+
+.form {
+    text-align: center;
+}
