@@ -22566,6 +22566,8 @@ var App = function (_React$Component) {
                 phone: '444-555-666',
                 email: 'przyklad1@email.com'
             }]
+        }, _this.deleteContact = function (id) {
+            console.log("delete w komponencie App" + id);
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22580,7 +22582,7 @@ var App = function (_React$Component) {
                     null,
                     'Contact Book'
                 ),
-                _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts })
+                _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact })
             );
         }
     }]);
@@ -22616,7 +22618,8 @@ var ContactList = function ContactList(props) {
     var contacts = props.contacts.map(function (contact) {
         return _react2.default.createElement(_SingleContact2.default, {
             key: contact.id,
-            contact: contact
+            contact: contact,
+            'delete': props.delete
         });
     });
 
@@ -22652,6 +22655,12 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var SingleContact = function SingleContact(props) {
+    var _props$contact = props.contact,
+        name = _props$contact.name,
+        surname = _props$contact.surname,
+        phone = _props$contact.phone,
+        email = _props$contact.email,
+        id = _props$contact.id;
 
     return _react2.default.createElement(
         'div',
@@ -22662,22 +22671,29 @@ var SingleContact = function SingleContact(props) {
             _react2.default.createElement(
                 'strong',
                 null,
-                props.contact.name
+                name
             ),
             _react2.default.createElement(
                 'strong',
                 null,
-                props.contact.surname
+                surname
             ),
             _react2.default.createElement(
                 'strong',
                 null,
-                props.contact.phone
+                phone
             ),
             _react2.default.createElement(
                 'strong',
                 null,
-                props.contact.email
+                email
+            ),
+            _react2.default.createElement(
+                'button',
+                { onClick: function onClick() {
+                        return props.delete(id);
+                    } },
+                'X'
             )
         )
     );

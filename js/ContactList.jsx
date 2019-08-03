@@ -8,6 +8,7 @@ const ContactList = (props) => {
         <SingleContact
             key={contact.id}
             contact={contact}
+            delete={props.delete}
         />
     );
 

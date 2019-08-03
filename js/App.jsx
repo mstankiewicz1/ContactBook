@@ -24,12 +24,17 @@ class App extends React.Component {
             };
 
 
+    deleteContact = (id) => {
+      console.log("delete w komponencie App" + id);
+    };
+
+
 
     render() {
         return (
             <div className="container">
                 <h1>Contact Book</h1>
-                <ContactList contacts={this.state.contacts}/>
+                <ContactList contacts={this.state.contacts} delete={this.deleteContact}/>
             </div>
         )
     }

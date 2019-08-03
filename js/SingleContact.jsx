@@ -3,13 +3,17 @@ import React from 'react';
 
 const SingleContact = (props) => {
 
+
+
+    const {name, surname, phone, email, id} = props.contact;
     return (
         <div>
             <p>
-                <strong>{props.contact.name}</strong>
-                <strong>{props.contact.surname}</strong>
-                <strong>{props.contact.phone}</strong>
-                <strong>{props.contact.email}</strong>
+                <strong>{name}</strong>
+                <strong>{surname}</strong>
+                <strong>{phone}</strong>
+                <strong>{email}</strong>
+                <button onClick={() => props.delete(id)}>X</button>
             </p>
         </div>
     )
