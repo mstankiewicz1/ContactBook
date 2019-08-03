@@ -12,6 +12,7 @@ class App extends React.Component {
                         surname: 'Kowalski',
                         phone: '111-222-333',
                         email: 'przyklad@email.com',
+                        important: true,
                     },
                     {
                         id: 1,
@@ -19,6 +20,7 @@ class App extends React.Component {
                         surname: 'Nowak',
                         phone: '444-555-666',
                         email: 'przyklad1@email.com',
+                        important: false,
                     }
                 ]
             };
