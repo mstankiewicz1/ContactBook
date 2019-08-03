@@ -16,6 +16,7 @@ const ContactList = (props) => {
     return (
             <div className="contactList">
                 <h2>Lista kontaktów</h2>
+                {contacts.length > 0 ? <em>Liczba kontaktów ({contacts.length})</em> : <p>Brak kontaktów</p>}
                 {contacts}
             </div>
         )

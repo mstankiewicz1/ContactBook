@@ -22586,13 +22586,13 @@ var App = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'container1' },
+                { className: 'container' },
                 _react2.default.createElement(
                     'h1',
                     null,
                     'Contact Book'
                 ),
-                _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact, change: this.changeContact })
+                _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact })
             );
         }
     }]);
@@ -22640,6 +22640,17 @@ var ContactList = function ContactList(props) {
             'h2',
             null,
             'Lista kontakt\xF3w'
+        ),
+        contacts.length > 0 ? _react2.default.createElement(
+            'em',
+            null,
+            'Liczba kontakt\xF3w (',
+            contacts.length,
+            ')'
+        ) : _react2.default.createElement(
+            'p',
+            null,
+            'Brak kontakt\xF3w'
         ),
         contacts
     );

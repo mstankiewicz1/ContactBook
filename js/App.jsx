@@ -38,9 +38,9 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="container1">
+            <div className="container">
                 <h1>Contact Book</h1>
-                <ContactList contacts={this.state.contacts} delete={this.deleteContact} change={this.changeContact}/>
+                <ContactList contacts={this.state.contacts} delete={this.deleteContact}/>
             </div>
         )
     }
