@@ -38,7 +38,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="container1">
                 <h1>Contact Book</h1>
                 <ContactList contacts={this.state.contacts} delete={this.deleteContact} change={this.changeContact}/>
             </div>

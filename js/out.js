@@ -22586,7 +22586,7 @@ var App = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'container' },
+                { className: 'container1' },
                 _react2.default.createElement(
                     'h1',
                     null,
