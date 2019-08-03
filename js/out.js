@@ -22532,6 +22532,8 @@ var _ContactList2 = _interopRequireDefault(_ContactList);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -22567,7 +22569,15 @@ var App = function (_React$Component) {
                 email: 'przyklad1@email.com'
             }]
         }, _this.deleteContact = function (id) {
-            console.log("delete w komponencie App" + id);
+            var contacts = [].concat(_toConsumableArray(_this.state.contacts));
+            var index = contacts.findIndex(function (contact) {
+                return contact.id === id;
+            });
+            contacts.splice(index, 1);
+            console.log(contacts);
+            _this.setState({
+                contacts: contacts
+            });
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22582,7 +22592,7 @@ var App = function (_React$Component) {
                     null,
                     'Contact Book'
                 ),
-                _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact })
+                _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact, change: this.changeContact })
             );
         }
     }]);

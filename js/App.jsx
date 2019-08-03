@@ -25,7 +25,13 @@ class App extends React.Component {
 
 
     deleteContact = (id) => {
-      console.log("delete w komponencie App" + id);
+      const contacts = [...this.state.contacts];
+      const index = contacts.findIndex(contact => contact.id === id);
+      contacts.splice(index, 1);
+      console.log(contacts);
+      this.setState({
+          contacts
+      })
     };
 
 
@@ -34,7 +40,7 @@ class App extends React.Component {
         return (
             <div className="container">
                 <h1>Contact Book</h1>
-                <ContactList contacts={this.state.contacts} delete={this.deleteContact}/>
+                <ContactList contacts={this.state.contacts} delete={this.deleteContact} change={this.changeContact}/>
             </div>
         )
     }
