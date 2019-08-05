@@ -22754,6 +22754,8 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -22779,7 +22781,13 @@ var AddContact = function (_React$Component) {
             surname: '',
             phone: '',
             email: '',
-            checked: false
+            important: false
+        }, _this.handleChange = function (e) {
+            if (e.target.type === "checkbox") {
+                _this.setState(_defineProperty({}, e.target.name, e.target.checked));
+            } else {
+                _this.setState(_defineProperty({}, e.target.name, e.target.value));
+            }
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22789,12 +22797,12 @@ var AddContact = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'form' },
-                _react2.default.createElement('input', { type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name }),
-                _react2.default.createElement('input', { type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname }),
-                _react2.default.createElement('input', { type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone }),
-                _react2.default.createElement('input', { type: 'email', placeholder: 'Wpisz email', value: this.state.email }),
+                _react2.default.createElement('input', { name: 'name', type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name, onChange: this.handleChange }),
+                _react2.default.createElement('input', { name: 'surname', type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname, onChange: this.handleChange }),
+                _react2.default.createElement('input', { name: 'phone', type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone, onChange: this.handleChange }),
+                _react2.default.createElement('input', { name: 'email', type: 'email', placeholder: 'Wpisz email', value: this.state.email, onChange: this.handleChange }),
                 _react2.default.createElement('br', null),
-                _react2.default.createElement('input', { type: 'checkbox', checked: this.state.checked, id: 'important' }),
+                _react2.default.createElement('input', { name: 'important', type: 'checkbox', checked: this.state.checked, id: 'important', onChange: this.handleChange }),
                 _react2.default.createElement(
                     'label',
                     { htmlFor: 'important' },
