@@ -22558,7 +22558,7 @@ var App = function (_React$Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.counter = 2, _this.state = {
             contacts: [{
                 id: 0,
                 name: 'Jan',
@@ -22584,6 +22584,21 @@ var App = function (_React$Component) {
             _this.setState({
                 contacts: contacts
             });
+        }, _this.addContact = function (name, surname, phone, email, important) {
+
+            var contact = {
+                id: _this.counter,
+                name: name,
+                surname: surname,
+                phone: phone,
+                email: email,
+                important: important
+            };
+            _this.counter++;
+            _this.setState({
+                contacts: [].concat(_toConsumableArray(_this.state.contacts), [contact])
+            });
+            return true;
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22598,7 +22613,7 @@ var App = function (_React$Component) {
                     null,
                     'Contact Book'
                 ),
-                _react2.default.createElement(_AddContact2.default, null),
+                _react2.default.createElement(_AddContact2.default, { add: this.addContact }),
                 _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact })
             );
         }
@@ -22788,6 +22803,26 @@ var AddContact = function (_React$Component) {
             } else {
                 _this.setState(_defineProperty({}, e.target.name, e.target.value));
             }
+        }, _this.handleClick = function () {
+            var _this$state = _this.state,
+                name = _this$state.name,
+                surname = _this$state.surname,
+                phone = _this$state.phone,
+                email = _this$state.email,
+                important = _this$state.important;
+
+
+            var add = _this.props.add(name, surname, phone, email, important);
+
+            if (add) {
+                _this.setState({
+                    name: '',
+                    surname: '',
+                    phone: '',
+                    email: '',
+                    important: false
+                });
+            }
         }, _temp), _possibleConstructorReturn(_this, _ret);
     }
 
@@ -22811,7 +22846,7 @@ var AddContact = function (_React$Component) {
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
                     'button',
-                    null,
+                    { onClick: this.handleClick },
                     'Dodaj Kontakt'
                 )
             );

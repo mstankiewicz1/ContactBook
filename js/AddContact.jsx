@@ -24,7 +24,22 @@ class AddContact extends React.Component{
         }
     };
 
+    handleClick = () => {
 
+        const {name, surname, phone,email, important} = this.state;
+
+        const add = this.props.add(name, surname, phone,email, important);
+
+        if(add){
+            this.setState({
+                name: '',
+                surname: '',
+                phone: '',
+                email: '',
+                important: false
+            })
+        }
+    };
 
 
     render(){
@@ -38,7 +53,7 @@ class AddContact extends React.Component{
                 <input name="important" type="checkbox" checked={this.state.checked} id="important" onChange={this.handleChange}/>
                 <label htmlFor="important">Priorytet</label>
                 <br/>
-                <button>Dodaj Kontakt</button>
+                <button onClick={this.handleClick}>Dodaj Kontakt</button>
             </div>
         );
     }

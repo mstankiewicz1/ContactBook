@@ -5,6 +5,8 @@ import AddContact from './AddContact.jsx';
 
 class App extends React.Component {
 
+    counter = 2;
+
     state = {
         contacts: [
                     {
@@ -37,13 +39,30 @@ class App extends React.Component {
       })
     };
 
+    addContact = (name, surname, phone, email, important) => {
+
+        const contact = {
+            id: this.counter,
+            name,
+            surname,
+            phone,
+            email,
+            important,
+        };
+        this.counter++;
+        this.setState({
+            contacts: [...this.state.contacts, contact]
+        });
+        return true
+    };
+
 
 
     render() {
         return (
             <div className="container">
                 <h1>Contact Book</h1>
-                <AddContact/>
+                <AddContact add={this.addContact}/>
                 <ContactList contacts={this.state.contacts} delete={this.deleteContact}/>
             </div>
         )
