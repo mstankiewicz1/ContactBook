@@ -20,7 +20,11 @@ class AddContact extends React.Component{
                 <input type="text" placeholder="Wpisz nazwisko" value={this.state.surname}/>
                 <input type="number" placeholder="Wpisz numer telefonu" value={this.state.phone}/>
                 <input type="email" placeholder="Wpisz email" value={this.state.email}/>
-                <input type="checkbox" checked={this.state.checked}/>
+                <br/>
+                <input type="checkbox" checked={this.state.checked} id="important"/>
+                <label htmlFor="important">Priorytet</label>
+                <br/>
+                <button>Dodaj Kontakt</button>
             </div>
         );
     }

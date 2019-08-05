@@ -23,4 +23,18 @@ h1 {
 
 .form {
     text-align: center;
+    font-size: 20px;
+}
+
+.form button {
+    padding: 3px 10px;
+    text-transform: uppercase;
+    margin: 20px;
+    font-size: 20px;
+}
+
+input {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
 }
