@@ -22647,7 +22647,27 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var ContactList = function ContactList(props) {
 
-    var contacts = props.contacts.map(function (contact) {
+    var name = props.contacts.filter(function (contact) {
+        return contact.name;
+    });
+
+    if (name.length >= 2) {
+        name.sort(function (a, b) {
+
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            if (a < b) {
+                return -1;
+            }
+            if (a > b) {
+                return 1;
+            }
+            return 0;
+        });
+    }
+
+    var contacts = name.map(function (contact) {
         return _react2.default.createElement(_SingleContact2.default, {
             key: contact.id,
             contact: contact,

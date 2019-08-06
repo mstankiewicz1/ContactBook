@@ -4,7 +4,25 @@ import SingleContact from './SingleContact.jsx';
 
 const ContactList = (props) => {
 
-    const contacts = props.contacts.map(contact =>
+    const name = props.contacts.filter(contact => contact.name);
+
+    if(name.length >=2 ){
+        name.sort((a,b) => {
+
+            a = a.name.toLowerCase();
+            b = b.name.toLowerCase();
+
+            if(a < b){
+                return - 1
+            }
+            if(a > b){
+                return  1
+            }
+            return 0
+        })
+    }
+
+    const contacts = name.map(contact =>
         <SingleContact
             key={contact.id}
             contact={contact}
