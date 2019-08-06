@@ -22565,6 +22565,7 @@ var App = function (_React$Component) {
                 surname: 'Kowalski',
                 phone: '111-222-333',
                 email: 'przyklad@email.com',
+                category: 'Przyjaciele',
                 important: true
             }, {
                 id: 1,
@@ -22572,6 +22573,7 @@ var App = function (_React$Component) {
                 surname: 'Nowak',
                 phone: '444-555-666',
                 email: 'przyklad1@email.com',
+                category: 'Rodzina',
                 important: false
             }]
         }, _this.deleteContact = function (id) {
@@ -22584,7 +22586,7 @@ var App = function (_React$Component) {
             _this.setState({
                 contacts: contacts
             });
-        }, _this.addContact = function (name, surname, phone, email, important) {
+        }, _this.addContact = function (name, surname, phone, email, category, important) {
 
             var contact = {
                 id: _this.counter,
@@ -22592,6 +22594,7 @@ var App = function (_React$Component) {
                 surname: surname,
                 phone: phone,
                 email: email,
+                category: category,
                 important: important
             };
             _this.counter++;
@@ -22729,6 +22732,7 @@ var SingleContact = function SingleContact(props) {
         phone = _props$contact.phone,
         email = _props$contact.email,
         id = _props$contact.id,
+        category = _props$contact.category,
         important = _props$contact.important;
 
     return _react2.default.createElement(
@@ -22756,6 +22760,11 @@ var SingleContact = function SingleContact(props) {
                 'strong',
                 null,
                 email
+            ),
+            _react2.default.createElement(
+                'strong',
+                null,
+                category
             ),
             _react2.default.createElement(
                 'button',
@@ -22816,6 +22825,7 @@ var AddContact = function (_React$Component) {
             surname: '',
             phone: '',
             email: '',
+            category: '',
             important: false
         }, _this.handleChange = function (e) {
             if (e.target.type === "checkbox") {
@@ -22829,10 +22839,11 @@ var AddContact = function (_React$Component) {
                 surname = _this$state.surname,
                 phone = _this$state.phone,
                 email = _this$state.email,
+                category = _this$state.category,
                 important = _this$state.important;
 
 
-            var add = _this.props.add(name, surname, phone, email, important);
+            var add = _this.props.add(name, surname, phone, email, category, important);
 
             if (add) {
                 _this.setState({
@@ -22840,6 +22851,7 @@ var AddContact = function (_React$Component) {
                     surname: '',
                     phone: '',
                     email: '',
+                    category: '',
                     important: false
                 });
             }
@@ -22862,6 +22874,31 @@ var AddContact = function (_React$Component) {
                     'label',
                     { htmlFor: 'important' },
                     'Priorytet'
+                ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                    'select',
+                    { name: 'category', value: this.state.category, onChange: this.handleChange },
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'Przyjaciele' },
+                        'Przyjaciele'
+                    ),
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'Rodzina' },
+                        'Rodzina'
+                    ),
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'Praca' },
+                        'Praca'
+                    ),
+                    _react2.default.createElement(
+                        'option',
+                        { value: 'Inne' },
+                        'Inne'
+                    )
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(

@@ -15,6 +15,7 @@ class App extends React.Component {
                         surname: 'Kowalski',
                         phone: '111-222-333',
                         email: 'przyklad@email.com',
+                        category: 'Przyjaciele',
                         important: true,
                     },
                     {
@@ -23,6 +24,7 @@ class App extends React.Component {
                         surname: 'Nowak',
                         phone: '444-555-666',
                         email: 'przyklad1@email.com',
+                        category: 'Rodzina',
                         important: false,
                     }
                 ]
@@ -39,7 +41,7 @@ class App extends React.Component {
       })
     };
 
-    addContact = (name, surname, phone, email, important) => {
+    addContact = (name, surname, phone, email, category, important) => {
 
         const contact = {
             id: this.counter,
@@ -47,13 +49,14 @@ class App extends React.Component {
             surname,
             phone,
             email,
+            category,
             important,
         };
         this.counter++;
         this.setState({
             contacts: [...this.state.contacts, contact]
         });
-        return true
+        return true;
     };
 
 

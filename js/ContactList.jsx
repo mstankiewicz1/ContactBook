@@ -38,8 +38,6 @@ const ContactList = (props) => {
                 {contacts}
             </div>
         )
-
-
-};
+    };
 
 export default ContactList;
