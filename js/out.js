@@ -22686,18 +22686,22 @@ var ContactList = function ContactList(props) {
             null,
             'Lista kontakt\xF3w'
         ),
-        contacts.length > 0 ? _react2.default.createElement(
-            'em',
-            null,
-            'Liczba kontakt\xF3w (',
-            contacts.length,
-            ')'
-        ) : _react2.default.createElement(
-            'p',
-            null,
-            'Brak kontakt\xF3w'
-        ),
-        contacts
+        _react2.default.createElement(
+            'div',
+            { className: 'contactList1' },
+            contacts.length > 0 ? _react2.default.createElement(
+                'em',
+                null,
+                'Liczba kontakt\xF3w (',
+                contacts.length,
+                ')'
+            ) : _react2.default.createElement(
+                'p',
+                null,
+                'Brak kontakt\xF3w'
+            ),
+            contacts
+        )
     );
 };
 
@@ -22864,47 +22868,51 @@ var AddContact = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'form' },
-                _react2.default.createElement('input', { name: 'name', type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name, onChange: this.handleChange }),
-                _react2.default.createElement('input', { name: 'surname', type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname, onChange: this.handleChange }),
-                _react2.default.createElement('input', { name: 'phone', type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone, onChange: this.handleChange }),
-                _react2.default.createElement('input', { name: 'email', type: 'email', placeholder: 'Wpisz email', value: this.state.email, onChange: this.handleChange }),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement('input', { name: 'important', type: 'checkbox', checked: this.state.checked, id: 'important', onChange: this.handleChange }),
                 _react2.default.createElement(
-                    'label',
-                    { htmlFor: 'important' },
-                    'Priorytet'
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                    'select',
-                    { name: 'category', value: this.state.category, onChange: this.handleChange },
+                    'fieldset',
+                    null,
+                    _react2.default.createElement('input', { name: 'name', type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name, onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'surname', type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname, onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'phone', type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone, onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'email', type: 'email', placeholder: 'Wpisz email', value: this.state.email, onChange: this.handleChange }),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('input', { name: 'important', type: 'checkbox', checked: this.state.checked, id: 'important', onChange: this.handleChange }),
                     _react2.default.createElement(
-                        'option',
-                        { value: 'Przyjaciele' },
-                        'Przyjaciele'
+                        'label',
+                        { htmlFor: 'important' },
+                        'Priorytet'
                     ),
+                    _react2.default.createElement('br', null),
                     _react2.default.createElement(
-                        'option',
-                        { value: 'Rodzina' },
-                        'Rodzina'
+                        'select',
+                        { name: 'category', value: this.state.category, onChange: this.handleChange },
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Przyjaciele' },
+                            'Przyjaciele'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Rodzina' },
+                            'Rodzina'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Praca' },
+                            'Praca'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Inne' },
+                            'Inne'
+                        )
                     ),
+                    _react2.default.createElement('br', null),
                     _react2.default.createElement(
-                        'option',
-                        { value: 'Praca' },
-                        'Praca'
-                    ),
-                    _react2.default.createElement(
-                        'option',
-                        { value: 'Inne' },
-                        'Inne'
+                        'button',
+                        { onClick: this.handleClick },
+                        'Dodaj Kontakt'
                     )
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.handleClick },
-                    'Dodaj Kontakt'
                 )
             );
         }
