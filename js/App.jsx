@@ -63,7 +63,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="container">
-                <h1>Contact Book</h1>
+                <h1>Książka Kontaktowa</h1>
                 <AddContact add={this.addContact}/>
                 <ContactList contacts={this.state.contacts} delete={this.deleteContact}/>
             </div>

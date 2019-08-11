@@ -12,12 +12,18 @@ const SingleContact = (props) => {
     return (
         <div>
             <p style={important ? style : null}>
-                    <strong>{name}</strong>
-                    <strong>{surname}</strong>
-                    <strong>{phone}</strong>
-                    <strong>{email}</strong>
-                    <strong>{category}</strong>
-                    <button onClick={() => props.delete(id)}>X</button>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>{name}</td>
+                            <td>{surname}</td>
+                            <td className="tdPhone">{phone}</td>
+                            <td className="tdEmail">{email}</td>
+                            <td>{category}</td>
+                            <td><button onClick={() => props.delete(id)}>X</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </p>
         </div>
     )

@@ -34,10 +34,10 @@ const ContactList = (props) => {
     return (
             <div className="contactList">
                     <h2>Lista kontaktów</h2>
-                        <div className="contactList1">
+                        <div className="contactListData">
                             {contacts.length > 0 ? <em>Liczba kontaktów ({contacts.length})</em> : <p>Brak kontaktów</p>}
-                            {contacts}
                         </div>
+                        <div className="contactData">{contacts}</div>
             </div>
         )
     };

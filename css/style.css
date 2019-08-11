@@ -5,13 +5,14 @@
 /*common*/
 .container {
     width: 1200px;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     border: 2px solid red;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 50px;
+    padding: 30px 30px;
     color: black;
     text-align: center;
     margin: 0 auto;
@@ -19,15 +20,13 @@ h1 {
 
 .form {
     width: 50%;
-    height: 100vh;
     text-align: center;
     font-size: 20px;
     border: 2px solid blue;
     float: left;
 }
 fieldset {
-    transform: translateY(20%);
-    border: 2px solid orange;
+    border: 2px solid green;
 }
 
 .form button {
@@ -48,7 +47,6 @@ input {
 
 .contactList {
     width: 50%;
-    height: 100vh;
     text-align: center;
     border: 2px solid red;
     float: right;
@@ -56,17 +54,39 @@ input {
 }
 
 h2 {
-    position: absolute;
-    width: 100%;
-    top: 10vh;
-    border: 2px solid orange;
+    font-size: 30px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    border: 2px solid brown;
 }
 
-.contactList1 {
-    position: absolute;
-    width: 100%;
-    top: 15vh;
-    border: 2px solid orange;
 
+.contactListData {
+    border: 2px solid yellow;
+    padding: 20px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+td {
+    padding: 5px;
+    border: 2px solid pink;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.tdEmail {
+    width: 160px;
+    word-wrap: break-word;
+}
+
+.tdPhone {
+    width: 95px;
+    word-wrap: break-word;
 }
 

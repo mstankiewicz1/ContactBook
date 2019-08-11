@@ -22614,7 +22614,7 @@ var App = function (_React$Component) {
                 _react2.default.createElement(
                     'h1',
                     null,
-                    'Contact Book'
+                    'Ksi\u0105\u017Cka Kontaktowa'
                 ),
                 _react2.default.createElement(_AddContact2.default, { add: this.addContact }),
                 _react2.default.createElement(_ContactList2.default, { contacts: this.state.contacts, 'delete': this.deleteContact })
@@ -22688,7 +22688,7 @@ var ContactList = function ContactList(props) {
         ),
         _react2.default.createElement(
             'div',
-            { className: 'contactList1' },
+            { className: 'contactListData' },
             contacts.length > 0 ? _react2.default.createElement(
                 'em',
                 null,
@@ -22699,7 +22699,11 @@ var ContactList = function ContactList(props) {
                 'p',
                 null,
                 'Brak kontakt\xF3w'
-            ),
+            )
+        ),
+        _react2.default.createElement(
+            'div',
+            { className: 'contactData' },
             contacts
         )
     );
@@ -22746,36 +22750,52 @@ var SingleContact = function SingleContact(props) {
             'p',
             { style: important ? style : null },
             _react2.default.createElement(
-                'strong',
+                'table',
                 null,
-                name
-            ),
-            _react2.default.createElement(
-                'strong',
-                null,
-                surname
-            ),
-            _react2.default.createElement(
-                'strong',
-                null,
-                phone
-            ),
-            _react2.default.createElement(
-                'strong',
-                null,
-                email
-            ),
-            _react2.default.createElement(
-                'strong',
-                null,
-                category
-            ),
-            _react2.default.createElement(
-                'button',
-                { onClick: function onClick() {
-                        return props.delete(id);
-                    } },
-                'X'
+                _react2.default.createElement(
+                    'tbody',
+                    null,
+                    _react2.default.createElement(
+                        'tr',
+                        null,
+                        _react2.default.createElement(
+                            'td',
+                            null,
+                            name
+                        ),
+                        _react2.default.createElement(
+                            'td',
+                            null,
+                            surname
+                        ),
+                        _react2.default.createElement(
+                            'td',
+                            { className: 'tdPhone' },
+                            phone
+                        ),
+                        _react2.default.createElement(
+                            'td',
+                            { className: 'tdEmail' },
+                            email
+                        ),
+                        _react2.default.createElement(
+                            'td',
+                            null,
+                            category
+                        ),
+                        _react2.default.createElement(
+                            'td',
+                            null,
+                            _react2.default.createElement(
+                                'button',
+                                { onClick: function onClick() {
+                                        return props.delete(id);
+                                    } },
+                                'X'
+                            )
+                        )
+                    )
+                )
             )
         )
     );
@@ -22829,7 +22849,7 @@ var AddContact = function (_React$Component) {
             surname: '',
             phone: '',
             email: '',
-            category: '',
+            category: 'Przyjaciele',
             important: false
         }, _this.handleChange = function (e) {
             if (e.target.type === "checkbox") {
@@ -22868,6 +22888,11 @@ var AddContact = function (_React$Component) {
             return _react2.default.createElement(
                 'div',
                 { className: 'form' },
+                _react2.default.createElement(
+                    'h2',
+                    null,
+                    'Dodaj Kontakt'
+                ),
                 _react2.default.createElement(
                     'fieldset',
                     null,
