@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #4A4A49;
+}
+
 /*common*/
 .container {
     width: 1200px;
@@ -13,7 +17,7 @@
 h1 {
     font-size: 50px;
     padding: 30px 30px;
-    color: black;
+    color: #FBBB21;
     text-align: center;
     margin: 0 auto;
 }
@@ -30,23 +34,47 @@ fieldset {
 }
 
 .form button {
-    padding: 3px 10px;
+    padding: 10px 10px;
     text-transform: uppercase;
     margin: 20px;
     font-size: 20px;
+    border-radius: 5px;
+    background-color: #BDBDBD;
+    color: #FFFFFF;
+}
+
+.signCheckbox {
+    border-radius: 100px;
+}
+
+.important {
+    color: #FBFBFA;
 }
 
 input {
     margin: 0 auto;
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-size: 20px;
     display: block;
     text-align: center;
+    border: 1px solid #FBFBFA;
+    background-color: #4A4A49;
+    color: #FBFBFA;
+    border-radius: 5px;
 }
+
+::-webkit-input-placeholder { color:#FBFBFA; }
+::-moz-placeholder { color:#FBFBFA; } /* firefox 19+ */
+:-ms-input-placeholder { color:#FBFBFA; } /* ie */
+
 
 .selectCategoryContact {
     margin-top: 20px;
+    border-radius: 5px;
+    background-color: #4A4A49;
+    color: #FBFBFA;
+    padding: 5px;
 }
 
 .contactList {
@@ -62,6 +90,7 @@ h2 {
     margin: 0 auto;
     padding: 30px 30px;
     border: 2px solid brown;
+    color: #FBBB21;
 }
 
 
