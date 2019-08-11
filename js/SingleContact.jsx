@@ -8,7 +8,9 @@ const SingleContact = (props) => {
         color: 'red'
     };
 
+
     const {name, surname, phone, email, id, category, important} = props.contact;
+
     return (
         <div>
             <p style={important ? style : null}>
@@ -20,7 +22,7 @@ const SingleContact = (props) => {
                             <td className="tdPhone">{phone}</td>
                             <td className="tdEmail">{email}</td>
                             <td>{category}</td>
-                            <td><button onClick={() => props.delete(id)}>X</button></td>
+                            <td><button onClick={() => props.delete(id)}>Usuń</button></td>
                         </tr>
                     </tbody>
                 </table>

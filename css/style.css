@@ -45,6 +45,10 @@ input {
     text-align: center;
 }
 
+.selectCategoryContact {
+    margin-top: 20px;
+}
+
 .contactList {
     width: 50%;
     text-align: center;

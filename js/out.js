@@ -22743,6 +22743,7 @@ var SingleContact = function SingleContact(props) {
         category = _props$contact.category,
         important = _props$contact.important;
 
+
     return _react2.default.createElement(
         'div',
         null,
@@ -22791,7 +22792,7 @@ var SingleContact = function SingleContact(props) {
                                 { onClick: function onClick() {
                                         return props.delete(id);
                                     } },
-                                'X'
+                                'Usu\u0144'
                             )
                         )
                     )
@@ -22904,13 +22905,13 @@ var AddContact = function (_React$Component) {
                     _react2.default.createElement('input', { name: 'important', type: 'checkbox', checked: this.state.checked, id: 'important', onChange: this.handleChange }),
                     _react2.default.createElement(
                         'label',
-                        { htmlFor: 'important' },
+                        { className: 'important', htmlFor: 'important' },
                         'Priorytet'
                     ),
                     _react2.default.createElement('br', null),
                     _react2.default.createElement(
                         'select',
-                        { name: 'category', value: this.state.category, onChange: this.handleChange },
+                        { className: 'selectCategoryContact', name: 'category', value: this.state.category, onChange: this.handleChange },
                         _react2.default.createElement(
                             'option',
                             { value: 'Przyjaciele' },

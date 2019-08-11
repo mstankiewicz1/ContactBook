@@ -55,9 +55,9 @@ class AddContact extends React.Component{
                     <input name="email" type="email" placeholder="Wpisz email" value={this.state.email} onChange={this.handleChange}/>
                     <br/>
                     <input name="important" type="checkbox" checked={this.state.checked} id="important" onChange={this.handleChange}/>
-                    <label htmlFor="important">Priorytet</label>
+                    <label className="important" htmlFor="important">Priorytet</label>
                     <br/>
-                    <select name="category" value={this.state.category} onChange={this.handleChange}>
+                    <select className="selectCategoryContact" name="category" value={this.state.category} onChange={this.handleChange}>
                         <option value="Przyjaciele">Przyjaciele</option>
                         <option value="Rodzina">Rodzina</option>
                         <option value="Praca">Praca</option>
