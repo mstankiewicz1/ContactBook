@@ -22850,7 +22850,7 @@ var AddContact = function (_React$Component) {
             surname: '',
             phone: '',
             email: '',
-            category: 'Przyjaciele',
+            category: '',
             important: false
         }, _this.handleChange = function (e) {
             if (e.target.type === "checkbox") {
@@ -22911,7 +22911,12 @@ var AddContact = function (_React$Component) {
                     _react2.default.createElement('br', null),
                     _react2.default.createElement(
                         'select',
-                        { className: 'selectCategoryContact', name: 'category', value: this.state.category, onChange: this.handleChange },
+                        { className: 'selectCategoryContact', name: 'category', type: 'text', value: this.state.category, onChange: this.handleChange },
+                        _react2.default.createElement(
+                            'option',
+                            null,
+                            'Wybierz kategori\u0119'
+                        ),
                         _react2.default.createElement(
                             'option',
                             { value: 'Przyjaciele' },
@@ -22936,7 +22941,7 @@ var AddContact = function (_React$Component) {
                     _react2.default.createElement('br', null),
                     _react2.default.createElement(
                         'button',
-                        { onClick: this.handleClick },
+                        { type: 'submit', onClick: this.handleClick },
                         'Dodaj Kontakt'
                     )
                 )

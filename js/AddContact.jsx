@@ -9,7 +9,7 @@ class AddContact extends React.Component{
         surname: '',
         phone: '',
         email: '',
-        category: 'Przyjaciele',
+        category: '',
         important: false
     };
 
@@ -27,7 +27,7 @@ class AddContact extends React.Component{
 
     handleClick = () => {
 
-        const {name, surname, phone,email, category, important} = this.state;
+        const {name, surname, phone, email, category, important} = this.state;
 
         const add = this.props.add(name, surname, phone,email, category, important);
 
@@ -57,14 +57,15 @@ class AddContact extends React.Component{
                     <input className="signCheckbox" name="important" type="checkbox" checked={this.state.checked} id="important" onChange={this.handleChange}/>
                     <label className="important" htmlFor="important">Priorytet</label>
                     <br/>
-                    <select className="selectCategoryContact" name="category" value={this.state.category} onChange={this.handleChange}>
+                    <select className="selectCategoryContact" name="category" type="text" value={this.state.category} onChange={this.handleChange}>
+                        <option>Wybierz kategorię</option>
                         <option value="Przyjaciele">Przyjaciele</option>
                         <option value="Rodzina">Rodzina</option>
                         <option value="Praca">Praca</option>
                         <option value="Inne">Inne</option>
                     </select>
                     <br/>
-                    <button onClick={this.handleClick}>Dodaj Kontakt</button>
+                    <button type="submit" onClick={this.handleClick}>Dodaj Kontakt</button>
                 </fieldset>
             </div>
         );
