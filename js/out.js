@@ -22730,8 +22730,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var SingleContact = function SingleContact(props) {
 
-    var style = {
-        color: 'red'
+    var styleImportant = {
+        color: '#FF3333'
+    };
+    var styleNotImportant = {
+        color: '#F9F9F9'
     };
 
     var _props$contact = props.contact,
@@ -22749,7 +22752,7 @@ var SingleContact = function SingleContact(props) {
         null,
         _react2.default.createElement(
             'p',
-            { style: important ? style : null },
+            { style: important ? styleImportant : styleNotImportant },
             _react2.default.createElement(
                 'table',
                 null,

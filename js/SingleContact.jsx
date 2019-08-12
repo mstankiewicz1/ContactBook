@@ -4,8 +4,11 @@ import React from 'react';
 const SingleContact = (props) => {
 
 
-    const style = {
-        color: 'red'
+    const styleImportant = {
+        color: '#FF3333'
+    };
+    const styleNotImportant = {
+        color: '#F9F9F9'
     };
 
 
@@ -13,7 +16,7 @@ const SingleContact = (props) => {
 
     return (
         <div>
-            <p style={important ? style : null}>
+            <p style={important ? styleImportant : styleNotImportant}>
                 <table>
                     <tbody>
                         <tr>
