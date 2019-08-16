@@ -22900,12 +22900,18 @@ var AddContact = function (_React$Component) {
                 _react2.default.createElement(
                     'fieldset',
                     null,
-                    _react2.default.createElement('input', { name: 'name', type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name, onChange: this.handleChange }),
-                    _react2.default.createElement('input', { name: 'surname', type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname, onChange: this.handleChange }),
-                    _react2.default.createElement('input', { name: 'phone', type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone, onChange: this.handleChange }),
-                    _react2.default.createElement('input', { name: 'email', type: 'email', placeholder: 'Wpisz email', value: this.state.email, onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'name', type: 'text', placeholder: 'Wpisz imi\u0119', value: this.state.name,
+                        onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'surname', type: 'text', placeholder: 'Wpisz nazwisko', value: this.state.surname,
+                        onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'phone', type: 'number', placeholder: 'Wpisz numer telefonu', value: this.state.phone,
+                        onChange: this.handleChange }),
+                    _react2.default.createElement('input', { name: 'email', type: 'email', placeholder: 'Wpisz email', value: this.state.email,
+                        onChange: this.handleChange }),
                     _react2.default.createElement('br', null),
-                    _react2.default.createElement('input', { className: 'signCheckbox', name: 'important', type: 'checkbox', checked: this.state.checked, id: 'important', onChange: this.handleChange }),
+                    _react2.default.createElement('input', { className: 'signCheckbox', name: 'important', type: 'checkbox', checked: this.state.checked,
+                        id: 'important',
+                        onChange: this.handleChange }),
                     _react2.default.createElement(
                         'label',
                         { className: 'important', htmlFor: 'important' },
@@ -22914,7 +22920,8 @@ var AddContact = function (_React$Component) {
                     _react2.default.createElement('br', null),
                     _react2.default.createElement(
                         'select',
-                        { className: 'selectCategoryContact', name: 'category', type: 'text', value: this.state.category, onChange: this.handleChange },
+                        { className: 'selectCategoryContact', name: 'category', type: 'text', value: this.state.category,
+                            onChange: this.handleChange },
                         _react2.default.createElement(
                             'option',
                             null,
