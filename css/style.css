@@ -227,14 +227,33 @@ td {
     font-family: 'Amaranth', sans-serif;
 }
 
+@media screen and (max-width: 320px) {
+    td {
+        font-size: 40px;
+        padding: 7px;
+    }
+}
+
 .tdEmail {
     width: 160px;
     word-wrap: break-word;
 }
 
+@media screen and (max-width: 320px) {
+    .tdEmail {
+        width: 200px;
+    }
+}
+
 .tdPhone {
     width: 95px;
     word-wrap: break-word;
+}
+
+@media screen and (max-width: 320px) {
+    .tdPhone {
+        width: 200px;
+    }
 }
 
 button {
@@ -243,36 +262,21 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #FFFFFF;
-    color: #4A4A49;
-    transition-duration: .8s;
-}
-
 @media screen and (max-width: 320px) {
-    td {
-        font-size: 40px;
-        padding-top: 7px;
-        text-align: center;
-        vertical-align: middle;
-        word-wrap: break-word;
-        font-family: 'Amaranth', sans-serif;
-    }
-    .tdEmail {
-        width: 200px;
-        word-wrap: break-word;
-    }
-
-    .tdPhone {
-        width: 200px;
-        word-wrap: break-word;
-    }
     button {
         width: 150px;
         height: 75px;
         font-size: 40px;
         border-radius: 15px;
     }
-
 }
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #4A4A49;
+    transition-duration: .8s;
+}
+
+
+
 
