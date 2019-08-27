@@ -25,7 +25,7 @@ const SingleContact = (props) => {
                             <td className="tdPhone">{phone}</td>
                             <td className="tdEmail">{email}</td>
                             <td>{category}</td>
-                            <td><button onClick={() => props.delete(id)}>Usuń</button></td>
+                            <td><button className="deleteContactButton" onClick={() => props.delete(id)}>Usuń</button></td>
                         </tr>
                     </tbody>
                 </table>

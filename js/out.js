@@ -22792,7 +22792,7 @@ var SingleContact = function SingleContact(props) {
                             null,
                             _react2.default.createElement(
                                 'button',
-                                { onClick: function onClick() {
+                                { className: 'deleteContactButton', onClick: function onClick() {
                                         return props.delete(id);
                                     } },
                                 'Usu\u0144'
@@ -22951,7 +22951,7 @@ var AddContact = function (_React$Component) {
                     _react2.default.createElement('br', null),
                     _react2.default.createElement(
                         'button',
-                        { type: 'submit', onClick: this.handleClick },
+                        { className: 'addContactButton', type: 'submit', onClick: this.handleClick },
                         'Dodaj Kontakt'
                     )
                 )

@@ -71,7 +71,7 @@ class AddContact extends React.Component{
                     <option value="Inne">Inne</option>
                 </select>
                 <br/>
-                <button type="submit" onClick={this.handleClick}>Dodaj Kontakt</button>
+                <button className="addContactButton" type="submit" onClick={this.handleClick}>Dodaj Kontakt</button>
             </fieldset>
         </div>;
     }
