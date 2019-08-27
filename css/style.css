@@ -218,7 +218,7 @@ input {
         height: 100px;
         font-size: 50px;
         padding: 5px;
-        padding-left: 40px;
+        padding-left: 15px;
     }
 }
 
@@ -228,7 +228,7 @@ input {
         height: 70px;
         font-size: 25px;
         padding: 5px;
-        padding-left: 75px;
+        padding-left: 15px;
     }
 }
 
@@ -434,6 +434,11 @@ button.addContactButton:hover {
     transition-duration: .8s;
 }
 
+button.deleteContactButton:hover {
+    background-color: #FFFFFF;
+    color: #4A4A49;
+    transition-duration: .8s;
+}
 
 
 

@@ -20,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            <state relative-caret-position="100">
+              <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       <file leaf-file-name="AddContact.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/AddContact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
+            <state relative-caret-position="1380">
               <caret line="69" column="56" lean-forward="true" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
               <folding />
             </state>
@@ -86,8 +86,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="423" column="18" lean-forward="false" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
+            <state relative-caret-position="138">
+              <caret line="428" column="1" lean-forward="true" selection-start-line="428" selection-start-column="1" selection-end-line="428" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -369,12 +369,12 @@
       <workItem from="1565959300097" duration="12272000" />
       <workItem from="1566899388406" duration="687000" />
       <workItem from="1566918385319" duration="6910000" />
-      <workItem from="1566927576739" duration="15127000" />
+      <workItem from="1566927576739" duration="15739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138634000" />
+    <option name="totallyTimeSpent" value="139246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -770,14 +770,6 @@
     <entry file="file://$PROJECT_DIR$/jquery.js" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_flaviusmatis-simplePagination.js-e32c66e.zip/flaviusmatis-simplePagination.js-e32c66e/simplePagination.css" />
     <entry file="file://$PROJECT_DIR$/Pagination/jquery.simplePagination.js" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -798,9 +790,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/ContactList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/AddContact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="1380">
           <caret line="69" column="56" lean-forward="true" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
           <folding />
         </state>
@@ -814,20 +816,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ContactList.jsx">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-402">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="423" column="18" lean-forward="false" selection-start-line="423" selection-start-column="18" selection-end-line="423" selection-end-column="18" />
+        <state relative-caret-position="138">
+          <caret line="428" column="1" lean-forward="true" selection-start-line="428" selection-start-column="1" selection-end-line="428" selection-end-column="1" />
           <folding />
         </state>
       </provider>
