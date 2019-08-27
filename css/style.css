@@ -32,6 +32,18 @@ h1 {
     }
 }
 
+
+@media screen and (min-width: 321px) and (max-width: 480px){
+    h1 {
+        font-size: 75px;
+        border: 2px solid #FBBB21;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding: 20px 20px;
+    }
+}
+
 .form {
     width: 49%;
     text-align: center;
@@ -43,6 +55,17 @@ h1 {
 }
 
 @media screen and (max-width: 320px) {
+    .form {
+        width: 98%;
+        height: 225vh;
+        display: block;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
     .form {
         width: 98%;
         height: 225vh;
@@ -75,6 +98,18 @@ h1 {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    .form button {
+        width: 500px;
+        height: 100px;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        margin: 20px;
+        font-size: 50px;
+        border-radius: 15x;
+    }
+}
+
 .form button:hover {
     background-color: #FFFFFF;
     color: #4A4A49;
@@ -93,11 +128,24 @@ h1 {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    .signCheckbox {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 .important {
     color: #FBFBFA;
 }
 
 @media screen and (max-width: 320px) {
+    .important {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
     .important {
         font-size: 50px;
     }
@@ -117,6 +165,15 @@ input {
 }
 
 @media screen and (max-width: 320px) {
+    input {
+        width: 600px;
+        height: 100px;
+        margin-top: 10px;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
     input {
         width: 600px;
         height: 100px;
@@ -158,6 +215,16 @@ input {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    .selectCategoryContact {
+        width: 500px;
+        height: 100px;
+        font-size: 50px;
+        padding: 5px;
+        padding-left: 40px;
+    }
+}
+
 .selectCategoryContact:hover {
     background-color: #FFFFFF;
     color: #4A4A49;
@@ -185,6 +252,17 @@ input {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    .contactList {
+        width: 98%;
+        min-height: 110vh;
+        height: auto;
+        display: block;
+        margin: 1%;
+        padding-bottom: 2%;
+    }
+}
+
 h2 {
     font-size: 30px;
     margin: 0 auto;
@@ -199,6 +277,13 @@ h2 {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    h2 {
+        font-size: 60px;
+        padding: 10px 10px;
+    }
+}
+
 .contactListData {
     padding: 20px 20px;
     color: #FBFBFA;
@@ -206,6 +291,14 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
+    .contactListData {
+        padding-top: 10px;
+        color: #FBFBFA;
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
     .contactListData {
         padding-top: 10px;
         color: #FBFBFA;
@@ -234,12 +327,25 @@ td {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    td {
+        font-size: 40px;
+        padding: 7px;
+    }
+}
+
 .tdEmail {
     width: 160px;
     word-wrap: break-word;
 }
 
 @media screen and (max-width: 320px) {
+    .tdEmail {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
     .tdEmail {
         width: 200px;
     }
@@ -256,6 +362,12 @@ td {
     }
 }
 
+@media screen and (min-width: 321px) and (max-width: 480px){
+    .tdPhone {
+        width: 200px;
+    }
+}
+
 button {
     background-color: #BDBDBD;
     color: #FFFFFF;
@@ -263,6 +375,15 @@ button {
 }
 
 @media screen and (max-width: 320px) {
+    button {
+        width: 150px;
+        height: 75px;
+        font-size: 40px;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px){
     button {
         width: 150px;
         height: 75px;
