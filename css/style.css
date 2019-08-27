@@ -21,7 +21,7 @@ h1 {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     h1 {
         font-size: 75px;
         border: 2px solid #FBBB21;
@@ -33,15 +33,18 @@ h1 {
 }
 
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     h1 {
-        font-size: 75px;
+        font-size: 50px;
         border: 2px solid #FBBB21;
+        width: 98%;
         margin-top: 1%;
         margin-left: 1%;
         margin-right: 1%;
+        margin-bottom: 1%;
         padding: 30px 30px;
         letter-spacing: 5px;
+        text-align: center;
     }
 }
 
@@ -55,7 +58,7 @@ h1 {
     height: 80vh;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .form {
         width: 98%;
         height: 205vh;
@@ -66,14 +69,16 @@ h1 {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .form {
-        width: 98%;
-        height: 264vh;
-        display: block;
-        margin-top: 1%;
-        margin-left: 1%;
-        margin-right: 1%;
+        width: 48%;
+        margin: 1%;
+        text-align: center;
+        font-size: 10px;
+        border: 2px solid #FBBB21;
+        float: left;
+        border-radius: 5px;
+        height: 195vh;
     }
 }
 
@@ -87,7 +92,7 @@ h1 {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .form button {
         width: 500px;
         height: 100px;
@@ -99,14 +104,14 @@ h1 {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .form button {
-        width: 500px;
-        height: 100px;
+        width: 250px;
+        height: 50px;
         padding: 10px 10px;
         text-transform: uppercase;
         margin: 20px;
-        font-size: 50px;
+        font-size: 25px;
         border-radius: 15x;
     }
 }
@@ -122,17 +127,17 @@ h1 {
     height: 20px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .signCheckbox {
         width: 80px;
         height: 80px;
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .signCheckbox {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -140,15 +145,15 @@ h1 {
     color: #FBFBFA;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .important {
         font-size: 50px;
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .important {
-        font-size: 50px;
+        font-size: 25px;
         letter-spacing: 5px;
     }
 }
@@ -166,7 +171,7 @@ input {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     input {
         width: 600px;
         height: 100px;
@@ -175,12 +180,12 @@ input {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     input {
-        width: 700px;
-        height: 115px;
+        width: 350px;
+        height: 70px;
         margin-top: 10px;
-        font-size: 50px;
+        font-size: 25px;
     }
 }
 
@@ -207,7 +212,7 @@ input {
     padding: 5px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .selectCategoryContact {
         width: 600px;
         height: 100px;
@@ -217,13 +222,13 @@ input {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .selectCategoryContact {
-        width: 700px;
-        height: 115px;
-        font-size: 50px;
+        width: 350px;
+        height: 70px;
+        font-size: 25px;
         padding: 5px;
-        padding-left: 150px;
+        padding-left: 75px;
     }
 }
 
@@ -243,10 +248,10 @@ input {
     position: relative;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .contactList {
         width: 98%;
-        min-height: 135vh;
+        min-height: 110vh;
         height: auto;
         display: block;
         margin: 1%;
@@ -255,14 +260,16 @@ input {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .contactList {
-        width: 98%;
-        min-height: 110vh;
-        height: auto;
-        display: block;
+        width: 48%;
         margin: 1%;
-        padding-bottom: 2%;
+        height: 195vh;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid #FBBB21;
+        float: right;
+        position: relative;
     }
 }
 
@@ -273,16 +280,16 @@ h2 {
     color: #FBBB21;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     h2 {
         font-size: 60px;
         padding: 10px 10px;
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     h2 {
-        font-size: 60px;
+        font-size: 40px;
         padding: 35px 35px;
         letter-spacing: 5px;
     }
@@ -294,7 +301,7 @@ h2 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .contactListData {
         padding-top: 10px;
         color: #FBFBFA;
@@ -302,11 +309,11 @@ h2 {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .contactListData {
         padding-top: 10px;
         color: #FBFBFA;
-        font-size: 50px;
+        font-size: 25px;
     }
 }
 
@@ -324,17 +331,17 @@ td {
     font-family: 'Amaranth', sans-serif;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     td {
         font-size: 40px;
         padding: 7px;
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     td {
-        font-size: 40px;
-        padding: 7px;
+        font-size: 20px;
+        padding: 5px;
     }
 }
 
@@ -343,15 +350,15 @@ td {
     word-wrap: break-word;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .tdEmail {
         width: 200px;
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .tdEmail {
-        width: 200px;
+        width: 125px;
     }
 }
 
@@ -360,20 +367,17 @@ td {
     word-wrap: break-word;
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 800px) {
     .tdPhone {
         width: 200px;
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     .tdPhone {
-        width: 200px;
+        width: 75px;
     }
 }
-
-
-/******************************************************/
 
 button.addContactButton {
     background-color: #BDBDBD;
@@ -382,7 +386,7 @@ button.addContactButton {
 }
 
 
-@media screen and (max-width: 435px)  {
+@media screen and (max-width: 800px)  {
     button.addContactButton {
         width: 600px;
         height: 100px;
@@ -390,15 +394,39 @@ button.addContactButton {
     }
 }
 
-@media screen and (min-width: 436px) and (max-width: 600px) {
+@media screen and (min-width: 801px) and (max-width: 1279px) {
     button.addContactButton {
-        width: 700px;
-        height: 115px;
-        font-size: 50px;
+        width: 350px;
+        height: 70px;
+        font-size: 25px;
     }
 }
 
-/**********************************************************/
+button.deleteContactButton {
+    background-color: #BDBDBD;
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 800px)  {
+    button.deleteContactButton {
+        width: 150px;
+        height: 50px;
+        border-radius: 15px;
+        font-size: 35px;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1279px) {
+    button.deleteContactButton {
+        width: 75px;
+        height: 35px;
+        border-radius: 15px;
+        font-size: 20px;
+        padding: 5px;
+    }
+}
 
 button.addContactButton:hover {
     background-color: #FFFFFF;
