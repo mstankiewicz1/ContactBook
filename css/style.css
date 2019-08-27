@@ -21,7 +21,7 @@ h1 {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     h1 {
         font-size: 75px;
         border: 2px solid #FBBB21;
@@ -33,7 +33,7 @@ h1 {
 }
 
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     h1 {
         font-size: 75px;
         border: 2px solid #FBBB21;
@@ -55,10 +55,10 @@ h1 {
     height: 80vh;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .form {
         width: 98%;
-        height: 225vh;
+        height: 205vh;
         display: block;
         margin-top: 1%;
         margin-left: 1%;
@@ -66,7 +66,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .form {
         width: 98%;
         height: 264vh;
@@ -87,7 +87,7 @@ h1 {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .form button {
         width: 500px;
         height: 100px;
@@ -99,7 +99,7 @@ h1 {
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .form button {
         width: 500px;
         height: 100px;
@@ -122,14 +122,14 @@ h1 {
     height: 20px;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .signCheckbox {
         width: 80px;
         height: 80px;
     }
 }
 
-@media screen and (min-width: 396px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .signCheckbox {
         width: 80px;
         height: 80px;
@@ -140,13 +140,13 @@ h1 {
     color: #FBFBFA;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .important {
         font-size: 50px;
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .important {
         font-size: 50px;
         letter-spacing: 5px;
@@ -166,7 +166,7 @@ input {
     border-radius: 5px;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     input {
         width: 600px;
         height: 100px;
@@ -175,7 +175,7 @@ input {
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     input {
         width: 700px;
         height: 115px;
@@ -207,7 +207,7 @@ input {
     padding: 5px;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .selectCategoryContact {
         width: 600px;
         height: 100px;
@@ -217,7 +217,7 @@ input {
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .selectCategoryContact {
         width: 700px;
         height: 115px;
@@ -243,18 +243,19 @@ input {
     position: relative;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .contactList {
         width: 98%;
-        min-height: 110vh;
+        min-height: 135vh;
         height: auto;
         display: block;
         margin: 1%;
         padding-bottom: 2%;
+        border: 2px solid #FBBB21;
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .contactList {
         width: 98%;
         min-height: 110vh;
@@ -272,14 +273,14 @@ h2 {
     color: #FBBB21;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     h2 {
         font-size: 60px;
         padding: 10px 10px;
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     h2 {
         font-size: 60px;
         padding: 35px 35px;
@@ -293,7 +294,7 @@ h2 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .contactListData {
         padding-top: 10px;
         color: #FBFBFA;
@@ -301,7 +302,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .contactListData {
         padding-top: 10px;
         color: #FBFBFA;
@@ -323,14 +324,14 @@ td {
     font-family: 'Amaranth', sans-serif;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     td {
         font-size: 40px;
         padding: 7px;
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     td {
         font-size: 40px;
         padding: 7px;
@@ -342,13 +343,13 @@ td {
     word-wrap: break-word;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .tdEmail {
         width: 200px;
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .tdEmail {
         width: 200px;
     }
@@ -359,13 +360,13 @@ td {
     word-wrap: break-word;
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 435px) {
     .tdPhone {
         width: 200px;
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     .tdPhone {
         width: 200px;
     }
@@ -381,7 +382,7 @@ button.addContactButton {
 }
 
 
-@media screen and (max-width: 395px)  {
+@media screen and (max-width: 435px)  {
     button.addContactButton {
         width: 600px;
         height: 100px;
@@ -389,7 +390,7 @@ button.addContactButton {
     }
 }
 
-@media screen and (min-width: 396px) and (max-width: 600px) {
+@media screen and (min-width: 436px) and (max-width: 600px) {
     button.addContactButton {
         width: 700px;
         height: 115px;
@@ -399,7 +400,7 @@ button.addContactButton {
 
 /**********************************************************/
 
-button:hover {
+button.addContactButton:hover {
     background-color: #FFFFFF;
     color: #4A4A49;
     transition-duration: .8s;
