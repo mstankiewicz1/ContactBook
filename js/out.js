@@ -22558,24 +22558,8 @@ var App = function (_React$Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.counter = 2, _this.state = {
-            contacts: [{
-                id: 0,
-                name: 'Jan',
-                surname: 'Kowalski',
-                phone: '111-222-333',
-                email: 'przyklad@email.com',
-                category: 'Przyjaciele',
-                important: true
-            }, {
-                id: 1,
-                name: 'Anna',
-                surname: 'Nowak',
-                phone: '444-555-666',
-                email: 'przyklad1@email.com',
-                category: 'Rodzina',
-                important: false
-            }]
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.counter = 0, _this.state = {
+            contacts: []
         }, _this.deleteContact = function (id) {
             var contacts = [].concat(_toConsumableArray(_this.state.contacts));
             var index = contacts.findIndex(function (contact) {
