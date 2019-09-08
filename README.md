@@ -3,6 +3,7 @@ contact contain such data as: name, surname,
 phone number, email, contact category and priority status.
 The application automatically displays the list of contacts 
 and their number. You can also delete the added contact. 
+Application sorts the contact list by name. 
 Application is RWD. Due to the huge number of mobile devices, 
 the application has the following breakpoints:
 max 800px,
