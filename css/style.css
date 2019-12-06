@@ -62,7 +62,7 @@ h1 {
         text-transform: uppercase;
         margin: 20px;
         font-size: 25px;
-        border-radius: 15x;
+        border-radius: 15px;
     }
 }
 
@@ -253,7 +253,6 @@ table {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
-    border: 2px solid orange;
 }
 
 td {
@@ -262,13 +261,12 @@ td {
     word-wrap: break-word;
     font-family: 'Amaranth', sans-serif;
     margin-bottom: 10px;
-    border: 2px solid orange;
 }
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
     td {
-        font-size: 40px;
-        padding: 7px;
+        font-size: 4vw;
+        padding: 5px;
     }
 }
 
@@ -282,13 +280,6 @@ td {
 .tdEmail {
     width: 20vw;
     word-wrap: break-word;
-    border: 2px solid orange;
-}
-
-@media screen and (min-width: 600px) and (max-width: 800px) {
-    .tdEmail {
-        width: 12vw;
-    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1279px) {
@@ -300,13 +291,6 @@ td {
 .tdPhone {
     width: 8vw;
     word-wrap: break-word;
-    border: 2px solid orange;
-}
-
-@media screen and (min-width: 600px) and (max-width: 800px) {
-    .tdPhone {
-        width: 200px;
-    }
 }
 
 @media screen and (min-width: 801px) and (max-width: 1279px) {
@@ -318,7 +302,7 @@ td {
 button.addContactButton {
     width: 45vw;
     height: 7vh;
-    font-size: 3.5vw;
+    font-size: 4vw;
     background-color: #BDBDBD;
     color: #FFFFFF;
     border-radius: 15px;
@@ -345,16 +329,14 @@ button.deleteContactButton {
     background-color: #BDBDBD;
     color: #FFFFFF;
     border-radius: 15px;
-    border: 2px solid orange;
 }
 
-@media screen and (min-width: 600px) and (max-width: 800px)  {
+@media screen and (min-width: 600px) and (max-width: 800px) {
     button.deleteContactButton {
-        width: 150px;
-        height: 50px;
-        border-radius: 15px;
-        font-size: 35px;
-        padding: 5px;
+        width: 13vw;
+        height: 5vh;
+        font-size: 20px;
+        margin-right: 5px;
     }
 }
 
