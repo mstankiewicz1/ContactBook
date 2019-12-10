@@ -47,7 +47,7 @@ class AddContact extends React.Component{
     render(){
         return <div className="form">
             <h2>Dodaj Kontakt</h2>
-            <fieldset>
+            <fieldset className="areaFields">
                 <input name="name" type="text" placeholder="Wpisz imię" value={this.state.name}
                        onChange={this.handleChange}/>
                 <input name="surname" type="text" placeholder="Wpisz nazwisko" value={this.state.surname}
