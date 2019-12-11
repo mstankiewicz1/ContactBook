@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="855f1926-0bf4-436b-ba7d-537607379b1c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/js/AddContact.jsx" afterPath="$PROJECT_DIR$/js/AddContact.jsx" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,7 +65,7 @@
       <file leaf-file-name="SingleContact.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/SingleContact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="158">
               <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
               <folding />
             </state>
@@ -78,7 +75,7 @@
       <file leaf-file-name="AddContact.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/AddContact.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="800">
               <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
               <folding />
             </state>
@@ -88,8 +85,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="350" column="24" lean-forward="true" selection-start-line="350" selection-start-column="24" selection-end-line="350" selection-end-column="24" />
+            <state relative-caret-position="129">
+              <caret line="217" column="1" lean-forward="true" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -110,6 +107,7 @@
       <find>em</find>
       <find>h2</find>
       <find>imp</find>
+      <find>contact</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -417,12 +415,12 @@
       <workItem from="1575937421242" duration="371000" />
       <workItem from="1575938375156" duration="1847000" />
       <workItem from="1575998946117" duration="2000" />
-      <workItem from="1576017653830" duration="3772000" />
+      <workItem from="1576017653830" duration="6558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193484000" />
+    <option name="totallyTimeSpent" value="196270000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -854,7 +852,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/AddContact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="800">
           <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding />
         </state>
@@ -862,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/SingleContact.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="158">
           <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
           <folding />
         </state>
@@ -880,8 +878,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="350" column="24" lean-forward="true" selection-start-line="350" selection-start-column="24" selection-end-line="350" selection-end-column="24" />
+        <state relative-caret-position="129">
+          <caret line="217" column="1" lean-forward="true" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
           <folding />
         </state>
       </provider>

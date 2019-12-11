@@ -21,6 +21,12 @@ h1 {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
 .form {
     width: 100%;
     text-align: center;
@@ -32,6 +38,20 @@ h1 {
 }
 
 @media screen and (min-width: 801px) and (max-width: 1279px) {
+    .form {
+        width: 48%;
+        margin: 1%;
+        text-align: center;
+        font-size: 10px;
+        border: 2px solid #FBBB21;
+        float: left;
+        border-radius: 5px;
+        min-height: 76vh;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
     .form {
         width: 48%;
         margin: 1%;
@@ -92,6 +112,13 @@ h1 {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .signCheckbox {
+        width: 35px;
+        height: 35px;
+    }
+}
+
 .important {
     color: #FBFBFA;
 }
@@ -103,6 +130,13 @@ h1 {
 }
 
 @media screen and (min-width: 801px) and (max-width: 1279px) {
+    .important {
+        font-size: 25px;
+        letter-spacing: 5px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
     .important {
         font-size: 25px;
         letter-spacing: 5px;
@@ -140,6 +174,16 @@ input {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    input {
+        width: 35vw;
+        height: 6vh;
+        display: block;
+        margin-top: 10px;
+        font-size: 1.5vw
+    }
+}
+
 ::-webkit-input-placeholder {
     color: #FBFBFA;
 }
@@ -168,6 +212,16 @@ input {
         width: 27vw;
         height: 8vh;
         font-size: 2.5vw;
+        padding: 5px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .selectCategoryContact {
+        width: 25vw;
+        height: 6vh;
+        font-size: 1.6vw;
         padding: 5px;
         padding-left: 15px;
     }
@@ -214,6 +268,19 @@ input {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .contactList {
+        width: 48%;
+        margin: 1%;
+        min-height: 78vh;
+        border-radius: 5px;
+        text-align: center;
+        border: 2px solid #FBBB21;
+        float: right;
+        position: relative;
+    }
+}
+
 h2 {
     font-size: 5vw;
     margin: 0 auto;
@@ -229,10 +296,16 @@ h2 {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    h2 {
+        font-size: 5vh;
+    }
+}
+
 .contactListData {
     padding: 2vw 4vh;
     color: #FBFBFA;
-    font-size: 5vw;
+    font-size: 3vw;
 }
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
@@ -250,6 +323,15 @@ h2 {
         font-size: 25px;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .contactListData {
+        padding-top: 10px;
+        color: #FBFBFA;
+        font-size: 25px;
+    }
+}
+
 
 table {
     border-collapse: collapse;
@@ -276,7 +358,13 @@ td {
     td {
         font-size: 20px;
         padding: 5px;
-        border: 2px solid red;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    td {
+        font-size: 25px;
+        padding: 5px;
     }
 }
 
@@ -288,6 +376,12 @@ td {
 @media screen and (min-width: 801px) and (max-width: 1279px) {
     .tdEmail {
         width: 8vw;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .tdEmail {
+        width: 7vw;
     }
 }
 
@@ -327,6 +421,14 @@ button.addContactButton {
     }
 }
 
+@media screen and (min-width: 1280px) {
+    button.addContactButton {
+        width: 25vw;
+        height: 7vh;
+        font-size: 20px;
+    }
+}
+
 button.deleteContactButton {
     width: 14vw;
     background-color: #BDBDBD;
@@ -350,6 +452,14 @@ button.deleteContactButton {
         border-radius: 15px;
         font-size: 13px;
         padding: 5px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    button.deleteContactButton {
+        width: 6vw;
+        height: 5vh;
+        font-size: 20px;
     }
 }
 
