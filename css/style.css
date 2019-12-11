@@ -246,8 +246,8 @@ input {
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .contactList {
         width: 98%;
-        height: 38vw;
-        min-height: auto;
+        min-height: 38vw;
+        height: auto;
         display: block;
         margin: 1%;
         padding-bottom: 2%;
