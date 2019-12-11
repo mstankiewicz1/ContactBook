@@ -46,8 +46,7 @@ h1 {
         border: 2px solid #FBBB21;
         float: left;
         border-radius: 5px;
-        min-height: 76vh;
-        height: auto;
+        height: 95vw;
     }
 }
 
@@ -60,7 +59,7 @@ h1 {
         border: 2px solid #FBBB21;
         float: left;
         border-radius: 5px;
-        min-height: 76vh;
+        min-height: 38vw;
         height: auto;
     }
 }
@@ -247,7 +246,8 @@ input {
 @media screen and (min-width: 600px) and (max-width: 800px) {
     .contactList {
         width: 98%;
-        height: auto;
+        height: 38vw;
+        min-height: auto;
         display: block;
         margin: 1%;
         padding-bottom: 2%;
@@ -259,7 +259,7 @@ input {
     .contactList {
         width: 48%;
         margin: 1%;
-        min-height: 76vh;
+        height: 95vw;
         border-radius: 5px;
         text-align: center;
         border: 2px solid #FBBB21;
@@ -268,11 +268,12 @@ input {
     }
 }
 
-@media screen and (min-width: 1280px) and (max-width: 2631px){
+@media screen and (min-width: 1280px) {
     .contactList {
         width: 48%;
         margin: 1%;
-        min-height: 77vh;
+        min-height: 38vw;
+        height: auto;
         border-radius: 5px;
         text-align: center;
         border: 2px solid #FBBB21;
